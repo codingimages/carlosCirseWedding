@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-gap: 5px;
+  margin: 5px;
+}
+
+.nav {
+  text-align: center;
+  background-image: linear-gradient(to bottom, #be1b82, #901973);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-top: 1rem;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: repeat(1);
+  justify-items: center;
+  width: 50%;
+  height: 5px;
+  margin: auto;
+  background-image: linear-gradient(to right, #be1b82, #901973);
+}
+
+.bar-2 {
+  display: grid;
+  grid-template-columns: repeat(1);
+  justify-items: center;
+  width: 50%;
+  height: 5px;
+  margin: auto;
+  background-image: linear-gradient(to right, #be1b82, #901973);
+  margin-bottom: 2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+h1, h2, h3{
+  font-family: 'Alex Brush', cursive;
+}
+
+.section__header {
+  position: relative;
+  display: block;
+  max-height: 90vh;
+}
+
+.section__header-background {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section__header-logo {
+  width: 50%;
+}
+
+.section__header-logo > img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  animation: leftToRight 1s 1 0s linear;
+  transition: all;
+}
+.section__header-text {
+  width: 50%;
+  height: auto;
+  background-image: linear-gradient(to bottom, #be1b82, #901973);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rightToLeft 1s 1 0s linear;
+  transition: all;
+}
+
+.section__header-text-paragraph {
+  background-image: linear-gradient(to bottom, #be1b82, #901973);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.video {
+  display: block;
+  margin: auto;
+  padding: 2rem;
+}
+
+.letters {
+  background-color:transparent;
+  background-image: linear-gradient(to right, rgba(169, 241, 223, .5), rgba(255, 187, 187, .5));
+  font-family: 'Neuton', serif;
+  letter-spacing: 4rpx;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.page-footer {
+  text-align: center;
+}
+/* Animation for logo picture */
+
+@keyframes leftToRight{
+  0%{
+      transform: translateX(-100%);
+      }
+  100%{
+      transform: rotate(xx) translateX(0);
+      }
+}
+
+@keyframes rightToLeft{
+  0%{
+      transform: translateX(100%);
+      }
+  100%{
+      transform: rotate(xx) translateX(0);
+      }
+}
+
+
+
+
+
